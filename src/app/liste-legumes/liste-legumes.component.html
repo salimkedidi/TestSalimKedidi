@@ -1,0 +1,11 @@
+<h1>Légumes de 12/Novembre/2019</h1>
+<ul class="list-group">
+    <li *ngFor="let l of tabLegumes">
+    <app-legume 
+    [img]=l.image
+    [nom]=l.nom
+    [prix]=l.prix
+    [frais]=l.frais>
+    </app-legume></li>
+    Donnez un prix Minimum <input type="number"#v (click)=act(v.value)>
+ <span (click)="aff(v.value)">   le NOMBRE DE LÉGUMES AYANT UN PRIX > {{aff(v.value)}} est</span>
